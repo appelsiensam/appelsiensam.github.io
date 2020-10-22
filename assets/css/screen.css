@@ -14,14 +14,13 @@ main {
     height: 100%;
     border: 10px solid orangered;
     padding: 10px;
-    box-shadow: 10px 15px #888888;
     margin-bottom: 20px;
     opacity: 0.6;
     margin-bottom: 10%;
 }
 
 header {
-    margin-top: 2%;
+    margin-top: 5%;
     margin-bottom: 2%;
 }
 
@@ -29,7 +28,7 @@ header img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 60%;
+    width: 60%;
 }
 
 ::-webkit-scrollbar {
@@ -56,6 +55,7 @@ h1 {
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
     font-family: Monospace;
     font-size: 3rem;
+    text-decoration: underline;
 }
 
 h1.red {
@@ -94,4 +94,34 @@ main p {
     font: 1.3rem Inconsolata, monospace;
     text-shadow: 0 0 5px #C8C8C8;
     text-shadow: 0 0 5px #C8C8C8;
+}
+
+@media only screen and (max-width: 900px) {
+    .socials img {
+        height: auto;
+        width: 25%;
+        margin-left: 6%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .noti {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    main {
+        width: 85%;
+    }
+
+    header img {
+        width: 80%;
+    }
+
+    .socials img {
+        height: auto;
+        width: 25%;
+        margin-left: 6%;
+    }
 }
