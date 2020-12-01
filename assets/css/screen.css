@@ -1,182 +1,54 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+html {
     height: 100%;
-    background-image: url(../../images/bg.gif);
-    background-size: 100% 100%;
+    width: 100%;
+}
+body {
+    height: auto;
+    width: auto;
+    background-image: url(../../images/background.jpg);
     background-repeat: no-repeat;
 }
 
 main {
-    margin-top: 20px;
-    width: 65%;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: black;
-    height: 100%;
-    border: 10px solid white;
-    padding: 10px;
-    margin-bottom: 20px;
-    opacity: 0.6;
-    margin-bottom: 10%;
-}
-
-header {
-    margin-top: 5%;
-    margin-bottom: 2%;
-}
-
-header img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-}
-
-::-webkit-scrollbar {
-    width: 3px;
-}
-
-::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey;
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-    background: red;
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #b30000;
-}
-
-h1 {
-    text-align: center;
-    color: white;
-    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-    font-family: Monospace;
-    font-size: 3rem;
-    text-decoration: underline;
-}
-
-h2 {
-    text-align: center;
-    color: white;
-    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-    font-family: Monospace;
-    font-size: 2rem;
-}
-
-h1.red {
-    text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 10px darkred;
-}
-
-h1.green {
-    text-shadow: 1px 1px 2px black, 0 0 25px green, 0 0 10px darkgreen;
-}
-
-.socials img {
     height: auto;
-    width: 15%;
-    margin-left: 13.5%;
-}
-
-.socials img:hover {
-    filter: invert(100%);
-    opacity: 0.5;
-}
-
-.noti img {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 20%;
-}
-
-.noti img:hover {
-    filter: grayscale(100%);
-}
-
-main p {
-    text-align: center;
-    color: white;
-    font: 1.3rem Inconsolata, monospace;
-    text-shadow: 0 0 5px #C8C8C8;
-}
-.btn{
-    display: block;
-    top: 50%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 5%;
-    background-color: darkgrey;
-    height: 50px;
-    width: 200px;
-    border-style: solid;
-    border-width: 4px;
-    border-left-color: white;
-    border-top-color: white;
-    border-bottom-color: dimgrey;
-    border-right-color: dimgrey;
-    -webkit-box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.75);
-    box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.75);
+    background-color: rgba(0,0,0,0.9);
+    margin-top: 12%;
+    padding: 5rem;
+    border-radius: 0.4rem;
+    box-shadow: rgba(42,183,202,0.5) 0px 0px 25px 5px;
+}
+
+header h1 {
+    font-size: 5rem;
+    text-align: center;
+    font-family: 'Libre Barcode 128 Text', cursive;
+    color: #fed766;
+}
+
+.menu ul {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.menu ul li {
+    font-weight: bolder;
+    font-family: 'Source Code Pro', monospace;
+    color: #b3cde0;
 }
 
 a {
     text-decoration: none;
-}
-.in_btn{
-    text-align:center;
-    font-family: 'Press Start 2P', cursive;
-    user-select: none;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -o-user-select: none;
-}
-.btn:hover{
-    background-color: darkblue;
-    color: white;
-    cursor: pointer;
-}
-.btn:active{
-    background-color: darkgrey;
-    color: black;
-    border-left-color: dimgrey;
-    border-top-color: dimgrey;
-    border-bottom-color: white;
-    border-right-color: white;
-    -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+    color: #f6abb6;
 }
 
-@media only screen and (max-width: 900px) {
-    .socials img {
-        height: auto;
-        width: 25%;
-        margin-left: 6%;
-    }
-}
-
-@media only screen and (max-width: 700px) {
-    .noti {
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    main {
-        width: 85%;
-    }
-
-    header img {
-        width: 80%;
-    }
-
-    .socials img {
-        height: auto;
-        width: 25%;
-        margin-left: 6%;
-    }
+a:hover {
+    color: #eec9d2;
 }
