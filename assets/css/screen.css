@@ -49,20 +49,29 @@ a {
 }
 
 a.toggled {
-    color: deeppink;
+    color: mediumspringgreen;
 }
+
+a:hover {
+    color: lightseagreen;
+}
+
 
 .menu {
     margin-bottom: 2rem;
 }
 
-p.about {
+p#generatedText {
     font-weight: bolder;
     letter-spacing: 1px;
     line-height: 20px;
     font-size: 0.8rem;
     font-family: 'Source Code Pro', monospace;
     color: #b3cde0;
+}
+
+.hidden {
+    display: none;
 }
 
 @media only screen and (max-width: 649px) {

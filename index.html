@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/css/screen.css">
     <link rel="stylesheet" href="assets/css/reset.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assets/js/script.js"></script>
 </head>
 <body>
     <main>
@@ -15,13 +16,12 @@
         </header>
         <div class="menu">
             <ul>
-                <li>[<a href="#" class="toggled">About</a>]</li>
-                <li>[<a href="#">Projects</a>]</li>
-                <li>[<a href="#">Contact</a>]</li>
+                <li>[<a href="#" data-name="about">About</a>]</li>
+                <li>[<a href="#" data-name="projects">Projects</a>]</li>
+                <li>[<a href="#" data-name="socials">Socials</a>]</li>
             </ul>
         </div>
-        <p class="about">Hii there! I am appelsiensam, an 18 years old guy born in Belgium who loves to &lt;code&gt; and is higly
-        interested in everything that has to do with technology. :^)</p>
+        <p id="generatedText"></p>
     </main>
 </body>
 </html>
