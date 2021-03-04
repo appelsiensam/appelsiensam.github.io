@@ -22,7 +22,7 @@ function handleNavigation(e) {
 
     let txt = ""
     if (e.target.dataset.name === "about") {
-        txt = "Hi there! I am appelsiensam, an 18 years old guy born in Belgium who loves to code and is higly interested in everything that has to do with technology. :^)"
+        txt = "Hi there! I am appelsiensam, an 19 years old guy born in Belgium who loves to code and is higly interested in everything that has to do with technology. :^)"
     } else if (e.target.dataset.name === "projects") {
         txt = "projects comming soon"
     } else {
